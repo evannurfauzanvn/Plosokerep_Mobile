@@ -7,8 +7,12 @@ environment:
   sdk: ^3.5.0
 
 dependencies:
+  adhan_dart: ^1.1.2
   flutter:
     sdk: flutter
+  geolocator: ^13.0.1
+  http: ^1.2.2
+  intl: ^0.19.0
 
 dev_dependencies:
   flutter_test:
@@ -20,3 +24,5 @@ flutter:
   assets:
   - image/LOGO1.png
   - image/logo.png
+  - image/masjid.jpeg
+  - image/masjid2.jpg

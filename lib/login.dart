@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:plosokerep_apk/register.dart';
-import 'package:plosokerep_apk/resources/btn.dart';
-import 'package:plosokerep_apk/resources/fmtx.dart';
-import 'package:plosokerep_apk/resources/sftmtx.dart';
+import 'package:plosokerep_apk/resources/btn/btn.dart';
+import 'package:plosokerep_apk/resources/fmtx/fmtx.dart';
+import 'package:plosokerep_apk/resources/fmtx/sftmtx.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});

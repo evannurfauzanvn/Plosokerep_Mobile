@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:plosokerep_apk/resources/fmtx.dart';
-import 'package:plosokerep_apk/resources/sftmtx.dart';
+import 'package:plosokerep_apk/resources/fmtx/fmtx.dart';
+import 'package:plosokerep_apk/resources/fmtx/sftmtx.dart';
 
 class Register extends StatefulWidget {
   const Register({super.key});
