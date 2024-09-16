@@ -37,19 +37,19 @@ class _Beranda extends State<Beranda> {
                     ),
                   ),
                   Container(
-                      margin: const EdgeInsets.only(left: 16, top: 5),
-                      child: const Text(
-                        "Jadwal Sholat",
-                        style: TextStyle(
-                            fontWeight: FontWeight.w800,
-                            color: Colors.white,
-                            fontSize: 40),
+                      margin: const EdgeInsets.only(top: 5),
+                      child: const Column(
+                        children: [
+                          Text(
+                            "Jadwal Sholat",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w800,
+                                color: Colors.white,
+                                fontSize: 40),
+                          ),
+                        ],
                       )),
-                  Container(
-                      padding:
-                          const EdgeInsets.only(left: 16, right: 16, top: 165),
-                      height: 340,
-                      child: const Waktusholat()),
+                  const Waktusholat(),
                 ],
               ),
             ),

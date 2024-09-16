@@ -1,3 +1,18 @@
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+
+Future<PrayerTime> fetchPrayerTimeByLocation(String cityName) async {
+  final response = await http.get(Uri.parse(
+      'https://api.aladhan.com/v1/timingsByCity?city=$cityName&country=Indonesia'));
+
+  if (response.statusCode == 200) {
+    final data = jsonDecode(response.body);
+    return PrayerTime.fromJson(data['data']['timings']);
+  } else {
+    throw Exception('Failed to load prayer time');
+  }
+}
+
 class PrayerTime {
   final String fajr;
   final String dhuhr;
