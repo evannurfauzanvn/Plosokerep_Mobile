@@ -42,8 +42,8 @@ class Bottomnavigationbar extends StatelessWidget {
             label: "Layanan",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.donut_small_sharp),
-            label: "Data Penduduk",
+            icon: Icon(Icons.person),
+            label: "Profile",
           ),
         ],
       ),

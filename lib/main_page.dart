@@ -15,7 +15,7 @@ class _HomePage extends State<HomePage> {
     const Beranda(),
     const Center(child: Text('profile desa')),
     const Center(child: Text('layanan')),
-    const Center(child: Text('data penduduk')),
+    const Center(child: Text('profile')),
   ];
   @override
   Widget build(BuildContext context) {

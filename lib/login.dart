@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:plosokerep_apk/main_page.dart';
 import 'package:plosokerep_apk/register.dart';
 import 'package:plosokerep_apk/resources/btn/btn.dart';
+import 'package:plosokerep_apk/resources/btn/btnsr.dart';
 import 'package:plosokerep_apk/resources/fmtx/fmtx.dart';
 import 'package:plosokerep_apk/resources/fmtx/sftmtx.dart';
 
@@ -28,7 +30,7 @@ class _Login extends State<Login> {
                 margin: const EdgeInsets.only(top: 20),
                 padding: const EdgeInsets.all(15),
                 decoration: BoxDecoration(
-                    border: Border.all(width: 2),
+                    border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(15)),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -38,10 +40,13 @@ class _Login extends State<Login> {
                       hintText: "E-mail atau nomor telpon",
                     ),
                     const SizedBox(
-                      height: 15,
+                      height: 10,
                     ),
                     SecureFormtext(
                         controller: _passwordcontroller, hintText: "Password"),
+                    const SizedBox(
+                      height: 10,
+                    ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -50,11 +55,11 @@ class _Login extends State<Login> {
                           onpressed: () {
                             Navigator.pushReplacement(context,
                                 MaterialPageRoute(builder: (context) {
-                              return const Register();
+                              return const HomePage();
                             }));
                           },
                         ),
-                        Button(
+                        ButtonSilver(
                           text: "Daftar",
                           onpressed: () => Navigator.pushReplacement(context,
                               MaterialPageRoute(builder: (context) {

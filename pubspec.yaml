@@ -25,5 +25,8 @@ flutter:
   assets:
   - image/LOGO1.png
   - image/logo.png
-  - image/masjid.jpeg
-  - image/masjid2.jpg
+  - image/masjid.jpg
+  - image/map.png
+  - image/aparatur.png
+  - image/info desa.png
+  - image/kontak desa.png

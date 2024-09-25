@@ -34,6 +34,7 @@ class _Waktusholat extends State<Waktusholat> {
             return Text('Error: ${snapshot.error}');
           } else if (snapshot.hasData) {
             return Container(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
               height: 340,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
@@ -58,7 +59,7 @@ class _Waktusholat extends State<Waktusholat> {
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
                               fontSize: 18),
-                              alignment: AlignmentDirectional.center,
+                          alignment: AlignmentDirectional.center,
                           value: selectedLocation,
                           dropdownColor: Colors.lightBlue,
                           menuMaxHeight: 200,

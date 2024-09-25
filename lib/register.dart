@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:plosokerep_apk/login.dart';
+import 'package:plosokerep_apk/main_page.dart';
+import 'package:plosokerep_apk/resources/btn/btn.dart';
+import 'package:plosokerep_apk/resources/btn/btnsr.dart';
 import 'package:plosokerep_apk/resources/fmtx/fmtx.dart';
 import 'package:plosokerep_apk/resources/fmtx/sftmtx.dart';
 
@@ -45,6 +49,28 @@ class _Register extends State<Register> {
                     SecureFormtext(controller: _passwordcontroller, hintText: "Password"),
                     const SizedBox(height: 10,),
                     SecureFormtext(controller: _confirmpasswordcontroller, hintText: "Confirm password"),
+                    const SizedBox(height: 10,),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Button(
+                          text: "Daftar",
+                          onpressed: () {
+                            Navigator.pushReplacement(context,
+                                MaterialPageRoute(builder: (context) {
+                              return const HomePage();
+                            }));
+                          },
+                        ),
+                        ButtonSilver(
+                          text: "Masuk",
+                          onpressed: () => Navigator.pushReplacement(context,
+                              MaterialPageRoute(builder: (context) {
+                            return const Login();
+                          })),
+                        )
+                      ],
+                    )
                   ],
                 ),
               )
