@@ -7,13 +7,18 @@ class IconBeranda extends StatelessWidget {
   final double hP = 5;
   final double S = 45;
   final TextStyle textStyle = const TextStyle(
-      fontSize: 12, fontWeight: FontWeight.w900, color: Colors.black);
+      fontSize: 12,
+      fontWeight: FontWeight.w900,
+      color: Colors.black,
+      shadows: [
+        Shadow(color: Colors.grey, blurRadius: 2, offset: Offset(-3, 3))
+      ]);
   const IconBeranda({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(bottom: 10, top: 16,left: 16,right: 16),
+      padding: const EdgeInsets.only(bottom: 10, top: 16, left: 16, right: 16),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
