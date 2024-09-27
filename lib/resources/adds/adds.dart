@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:plosokerep_apk/resources/iklan/iklan_dumy.dart';
+import 'package:plosokerep_apk/resources/adds/adds_dumy.dart';
 
 class Iklan extends StatefulWidget {
   const Iklan({super.key});

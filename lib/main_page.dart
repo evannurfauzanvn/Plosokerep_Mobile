@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:plosokerep_apk/beranda.dart';
-import 'package:plosokerep_apk/resources/btmnavbar.dart';
+import 'package:plosokerep_apk/profile_desa.dart';
+import 'package:plosokerep_apk/resources/nvbr/btmnvbr.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -13,7 +14,7 @@ class _HomePage extends State<HomePage> {
   int _currentIndex = 0;
   final List<Widget> _pages = [
     const Beranda(),
-    const Center(child: Text('profile desa')),
+    const ProfileDesa(),
     const Center(child: Text('layanan')),
     const Center(child: Text('profile')),
   ];

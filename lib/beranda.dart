@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:plosokerep_apk/resources/appbar.dart';
+import 'package:plosokerep_apk/resources/apbr/apbr.dart';
 import 'package:plosokerep_apk/resources/cntr/sdwcntr.dart';
-import 'package:plosokerep_apk/resources/icon_beranda.dart';
-import 'package:plosokerep_apk/resources/iklan/iklan.dart';
+import 'package:plosokerep_apk/resources/icn/icnbrnd.dart';
+import 'package:plosokerep_apk/resources/adds/adds.dart';
 import 'package:plosokerep_apk/resources/ws/ws.dart';
 
 class Beranda extends StatefulWidget {
