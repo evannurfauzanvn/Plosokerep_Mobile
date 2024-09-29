@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:plosokerep_apk/beranda.dart';
 import 'package:plosokerep_apk/profile_desa.dart';
-import 'package:plosokerep_apk/resources/nvbr/btmnvbr.dart';
+import 'package:plosokerep_apk/resources/br/btmnvbr.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

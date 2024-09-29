@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:plosokerep_apk/resources/apbr/apbr.dart';
+import 'package:plosokerep_apk/resources/br/apbr.dart';
+import 'package:plosokerep_apk/resources/clr.dart';
 import 'package:plosokerep_apk/resources/cntr/sdwcntr.dart';
 import 'package:plosokerep_apk/resources/icn/icnbrnd.dart';
 import 'package:plosokerep_apk/resources/adds/adds.dart';
@@ -16,6 +17,7 @@ class _Beranda extends State<Beranda> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: background,
       appBar: const Appbar(),
       body: SingleChildScrollView(
         child: Column(

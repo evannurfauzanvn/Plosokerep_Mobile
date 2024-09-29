@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plosokerep_apk/main_page.dart';
+import 'package:plosokerep_apk/resources/clr.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -39,6 +40,7 @@ class _Splashscreen extends State<SplashScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: background,
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Center(

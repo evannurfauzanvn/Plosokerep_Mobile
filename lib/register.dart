@@ -3,6 +3,7 @@ import 'package:plosokerep_apk/login.dart';
 import 'package:plosokerep_apk/main_page.dart';
 import 'package:plosokerep_apk/resources/btn/btn.dart';
 import 'package:plosokerep_apk/resources/btn/btnsr.dart';
+import 'package:plosokerep_apk/resources/clr.dart';
 import 'package:plosokerep_apk/resources/fmtx/fmtx.dart';
 import 'package:plosokerep_apk/resources/fmtx/sftmtx.dart';
 
@@ -23,6 +24,7 @@ class _Register extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: background,
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.only(top: 150,left: 16,right: 16),

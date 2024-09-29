@@ -4,15 +4,19 @@ class ShadowContainer extends StatelessWidget {
   final double w;
   final double h;
   final Widget child;
-  const ShadowContainer({super.key, required this.w, required this.h, required this.child});
+  final Color? colors;
+  final EdgeInsetsGeometry? padding;
+  const ShadowContainer({super.key, required this.w, required this.h, required this.child, this.colors, this.padding});
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: padding ?? const EdgeInsets.all(0),
       width: w,
       height: h,
+      alignment: AlignmentDirectional.center,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: colors??Colors.white,
         border: Border.all(width: 0.1,color: Colors.grey),
         boxShadow: const [
           BoxShadow(
