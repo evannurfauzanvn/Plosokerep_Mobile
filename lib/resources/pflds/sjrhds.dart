@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plosokerep_apk/resources/br/appbrpflds.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 class SejarahDesa extends StatelessWidget {
@@ -8,14 +9,7 @@ class SejarahDesa extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: Colors.white,
-        title: const Text(
-          "Sejarah Desa Plosokerep",
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-        ),
-      ),
+      appBar: const AppbarProfileDesa(judul: "Sejarah Desa",),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Stack(

@@ -23,14 +23,13 @@ class _Iklan extends State<Iklan> {
       if (_currentPage < iklan.length - 1) {
         _currentPage++;
       } else {
-        _currentPage =
-            0;
+        _currentPage = 0;
       }
 
       _pageController.animateToPage(
         _currentPage,
-        duration: const Duration(milliseconds: 300),
-        curve: Curves.easeIn,
+        duration: const Duration(milliseconds: 1000),
+        curve: Curves.easeInOutExpo,
       );
     });
   }

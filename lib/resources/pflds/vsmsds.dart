@@ -1,24 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:plosokerep_apk/resources/br/appbrpflds.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 class VisiMisiDesa extends StatelessWidget {
-  final TextStyle textstyle = const TextStyle(
-    fontSize: 18,
-    fontWeight: FontWeight.bold
-  );
+  final TextStyle textstyle =
+      const TextStyle(fontSize: 18, fontWeight: FontWeight.bold);
   const VisiMisiDesa({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: Colors.white,
-        title: const Text(
-          "Visi dan Misi Desa Tahun 2015-2021",
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-        ),
+      appBar: const AppbarProfileDesa(
+        judul: "Visi dan Misi Desa Tahun 2015-2021",
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -29,7 +23,10 @@ class VisiMisiDesa extends StatelessWidget {
               height: MediaQuery.of(context).size.height,
               child: Column(
                 children: [
-                  Text("Visi Desa",style: textstyle,),
+                  Text(
+                    "Visi Desa",
+                    style: textstyle,
+                  ),
                   SizedBox(
                     height: 265,
                     child: SfPdfViewer.asset(
@@ -41,7 +38,10 @@ class VisiMisiDesa extends StatelessWidget {
                       maxZoomLevel: 1,
                     ),
                   ),
-                  Text("Misi Desa",style: textstyle,),
+                  Text(
+                    "Misi Desa",
+                    style: textstyle,
+                  ),
                   SizedBox(
                     height: 330,
                     child: SfPdfViewer.asset(
