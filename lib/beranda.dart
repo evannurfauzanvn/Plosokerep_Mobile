@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:plosokerep_apk/resources/br/apbr.dart';
 import 'package:plosokerep_apk/resources/clr.dart';
 import 'package:plosokerep_apk/resources/cntr/sdwcntr.dart';
-import 'package:plosokerep_apk/resources/icn/icnbrnd.dart';
+import 'package:plosokerep_apk/resources/vw/vwicnbrnd.dart';
 import 'package:plosokerep_apk/resources/adds/adds.dart';
 import 'package:plosokerep_apk/resources/ws/ws.dart';
 
@@ -59,7 +59,7 @@ class _Beranda extends State<Beranda> {
               ),
             ),
             const SizedBox(
-              child: IconBeranda(),
+              child: ViewIconBeranda(),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 16,right: 16,bottom: 10),

@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class SecureFormtext extends StatefulWidget {
+class SecureFormField extends StatefulWidget {
   final TextEditingController controller;
   final String hintText;
 
-  const SecureFormtext({super.key, 
+  const SecureFormField({super.key, 
     required this.controller,
     required this.hintText,
   });
 
   @override
-  State<StatefulWidget> createState() => _SecureFormtext();
+  State<StatefulWidget> createState() => _SecureFormField();
 }
 
-class _SecureFormtext extends State<SecureFormtext> {
+class _SecureFormField extends State<SecureFormField> {
   bool _isObscured = true;
 
   @override

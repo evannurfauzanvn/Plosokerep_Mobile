@@ -6,12 +6,14 @@ class ShadowContainer extends StatelessWidget {
   final Widget child;
   final Color? colors;
   final EdgeInsetsGeometry? padding;
-  const ShadowContainer({super.key, required this.w, required this.h, required this.child, this.colors, this.padding});
+  final EdgeInsetsGeometry? margin;
+  const ShadowContainer({super.key, required this.w, required this.h, required this.child, this.colors, this.padding, this.margin});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: padding ?? const EdgeInsets.all(0),
+      margin: margin,
+      padding: padding,
       width: w,
       height: h,
       alignment: AlignmentDirectional.center,

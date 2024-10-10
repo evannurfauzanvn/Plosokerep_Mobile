@@ -4,8 +4,8 @@ import 'package:plosokerep_apk/main_page.dart';
 import 'package:plosokerep_apk/resources/btn/btn.dart';
 import 'package:plosokerep_apk/resources/btn/btnsr.dart';
 import 'package:plosokerep_apk/resources/clr.dart';
-import 'package:plosokerep_apk/resources/fmtx/fmtx.dart';
-import 'package:plosokerep_apk/resources/fmtx/sftmtx.dart';
+import 'package:plosokerep_apk/resources/frmfld/brdfrmfld.dart';
+import 'package:plosokerep_apk/resources/frmfld/scrfrmfld.dart';
 
 class Register extends StatefulWidget {
   const Register({super.key});
@@ -40,17 +40,17 @@ class _Register extends State<Register> {
                 ),
                 child: Column(
                   children: [
-                    Formtext(controller: _emailcontroller, hintText: "E-mail"),
+                    BorderFormField(controller: _emailcontroller, hintText: "E-mail"),
                     const SizedBox(height: 10,),
-                    Formtext(controller: _phonecontroller, hintText: "Nomor telpon"),
+                    BorderFormField(controller: _phonecontroller, hintText: "Nomor telpon"),
                     const SizedBox(height: 10,),
-                    Formtext(controller: _frontnamecontroller, hintText: "Nama depan"),
+                    BorderFormField(controller: _frontnamecontroller, hintText: "Nama depan"),
                     const SizedBox(height: 10,),
-                    Formtext(controller: _lastnamecontroller, hintText: "Nama belakang (opsional)"),
+                    BorderFormField(controller: _lastnamecontroller, hintText: "Nama belakang (opsional)"),
                     const SizedBox(height: 10,),
-                    SecureFormtext(controller: _passwordcontroller, hintText: "Password"),
+                    SecureFormField(controller: _passwordcontroller, hintText: "Password"),
                     const SizedBox(height: 10,),
-                    SecureFormtext(controller: _confirmpasswordcontroller, hintText: "Confirm password"),
+                    SecureFormField(controller: _confirmpasswordcontroller, hintText: "Confirm password"),
                     const SizedBox(height: 10,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,

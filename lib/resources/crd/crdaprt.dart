@@ -6,9 +6,9 @@ class CardAparatur extends StatelessWidget {
   final Widget image;
   final String? name;
   final String? jabatan;
-  final TextStyle titlestyle =
+  final TextStyle namestyle =
       const TextStyle(fontWeight: FontWeight.bold, fontSize: 24);
-  final TextStyle subtitlestyle = const TextStyle(fontSize: 20);
+  final TextStyle jabatanstyle = const TextStyle(fontSize: 20);
   CardAparatur({super.key, this.profile, this.name, this.jabatan})
       : image = Image.asset(profile ?? "image/aparatur.png", fit: BoxFit.cover);
 
@@ -33,11 +33,11 @@ class CardAparatur extends StatelessWidget {
               children: [
                 Text(
                   name ?? "Nama Anggota",
-                  style: titlestyle,
+                  style: namestyle,
                 ),
                 Text(
                   jabatan ?? "Jabatan",
-                  style: subtitlestyle,
+                  style: jabatanstyle,
                 ),
               ],
             ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:plosokerep_apk/resources/br/appbrpflds.dart';
+import 'package:plosokerep_apk/resources/br/appbrtx.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 class SejarahDesa extends StatelessWidget {
@@ -9,7 +9,7 @@ class SejarahDesa extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: const AppbarProfileDesa(judul: "Sejarah Desa",),
+      appBar: const AppBarText(judul: "Sejarah Desa",),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Stack(

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-class Appbar extends StatelessWidget implements PreferredSizeWidget {
-  const Appbar({super.key});
+class AppBarText extends StatelessWidget implements PreferredSizeWidget {
+  final String? judul;
+  const AppBarText({super.key, this.judul});
 
   @override
   Widget build(BuildContext context) {
@@ -14,13 +15,12 @@ class Appbar extends StatelessWidget implements PreferredSizeWidget {
             offset: Offset(0, -6))
       ]),
       child: AppBar(
-        title: SizedBox(
-            height: 60,
-            child: Image.asset(
-              "image/LOGO1.png",
-              fit: BoxFit.contain,
-            )),
-        backgroundColor: Colors.lightBlue,
+        centerTitle: true,
+        backgroundColor: Colors.white,
+        title: Text(
+          judul ?? "Judul",
+          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        ),
       ),
     );
   }

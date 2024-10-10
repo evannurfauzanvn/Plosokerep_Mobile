@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:plosokerep_apk/resources/crd/crdaprt.dart';
-import 'package:plosokerep_apk/resources/pflds/listaparaturdummy.dart';
+import 'package:plosokerep_apk/resources/listaparaturdummy.dart';
 
-class PageViewAparatur extends StatelessWidget {
-  const PageViewAparatur({super.key});
+class ListViewAparatur extends StatelessWidget {
+  const ListViewAparatur({super.key});
 
   @override
   Widget build(BuildContext context) {

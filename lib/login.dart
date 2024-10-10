@@ -4,8 +4,8 @@ import 'package:plosokerep_apk/register.dart';
 import 'package:plosokerep_apk/resources/btn/btn.dart';
 import 'package:plosokerep_apk/resources/btn/btnsr.dart';
 import 'package:plosokerep_apk/resources/clr.dart';
-import 'package:plosokerep_apk/resources/fmtx/fmtx.dart';
-import 'package:plosokerep_apk/resources/fmtx/sftmtx.dart';
+import 'package:plosokerep_apk/resources/frmfld/brdfrmfld.dart';
+import 'package:plosokerep_apk/resources/frmfld/scrfrmfld.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -37,14 +37,14 @@ class _Login extends State<Login> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Formtext(
+                    BorderFormField(
                       controller: _emailcontroller,
                       hintText: "E-mail atau nomor telpon",
                     ),
                     const SizedBox(
                       height: 10,
                     ),
-                    SecureFormtext(
+                    SecureFormField(
                         controller: _passwordcontroller, hintText: "Password"),
                     const SizedBox(
                       height: 10,

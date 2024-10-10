@@ -4,6 +4,8 @@ class ButtonIconNamed extends StatelessWidget {
   final VoidCallback onpressed;
   final Widget image;
   final String name;
+  final TextStyle textStyle = const TextStyle(
+      fontWeight: FontWeight.bold, fontSize: 18, color: Colors.black);
   const ButtonIconNamed(
       {super.key,
       required this.onpressed,
@@ -26,19 +28,13 @@ class ButtonIconNamed extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(
-              height: 100,
-              child: image
-            ),
+            SizedBox(height: 100, child: image),
             SizedBox(
               width: 180,
               height: 30,
               child: Text(
                 name,
-                style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18,
-                    color: Colors.black),
+                style: textStyle,
                 textAlign: TextAlign.center,
               ),
             )
