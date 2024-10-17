@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:plosokerep_apk/resources/clr.dart';
 
 class BorderContainer extends StatelessWidget {
+  final double? w;
+  final double? h;
   final Widget child;
   final Color? colors;
   final EdgeInsetsGeometry? padding;
@@ -12,17 +15,19 @@ class BorderContainer extends StatelessWidget {
     required this.child,
     this.colors,
     this.padding,
-    this.margin,
+    this.margin, this.w, this.h,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: w,
+      height: h,
       margin: margin ?? EdgeInsets.only(top: t, left: pm, right: pm),
       padding: padding ?? const EdgeInsets.all(15),
       alignment: AlignmentDirectional.center,
       decoration: BoxDecoration(
-          color: colors ?? Colors.white,
+          color: colors ?? background,
           border: Border.all(width: 1),
           borderRadius: BorderRadius.circular(15)),
       child: child,

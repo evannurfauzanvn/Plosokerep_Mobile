@@ -10,8 +10,8 @@ class ProfileDesa extends StatelessWidget {
   final double w = 200;
   final EdgeInsetsGeometry _padding =
       const EdgeInsets.only(left: 20, right: 20);
-  final Color color = Colors.blueGrey;
-  const ProfileDesa({super.key});
+  final Color color = sekunder;
+  ProfileDesa({super.key});
 
   @override
   Widget build(BuildContext context) {

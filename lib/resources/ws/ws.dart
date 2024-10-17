@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plosokerep_apk/resources/clr.dart';
 import 'package:plosokerep_apk/resources/ws/bxws.dart';
 import 'package:plosokerep_apk/resources/ws/getws.dart';
 import 'package:plosokerep_apk/resources/ws/lslks.dart';
@@ -61,10 +62,10 @@ class _Waktusholat extends State<Waktusholat> {
                               fontSize: 18),
                           alignment: AlignmentDirectional.center,
                           value: selectedLocation,
-                          dropdownColor: Colors.lightBlue,
+                          dropdownColor: primer,
                           menuMaxHeight: 200,
                           borderRadius: BorderRadius.circular(5),
-                          iconEnabledColor: Colors.white,
+                          iconEnabledColor: background,
                           onChanged: (String? newValue) {
                             setState(() {
                               selectedLocation = newValue!;

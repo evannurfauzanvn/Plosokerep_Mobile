@@ -3,8 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:plosokerep_apk/resources/br/appbrtx.dart';
 import 'package:plosokerep_apk/resources/clr.dart';
 import 'package:plosokerep_apk/resources/cntr/brdcntr.dart';
-import 'package:plosokerep_apk/resources/pckr/flpckr.dart';
 import 'package:plosokerep_apk/resources/frmfld/brdfrmfld.dart';
+import 'package:plosokerep_apk/resources/pckr/pckr.dart';
 
 class Pengajuan extends StatefulWidget {
   const Pengajuan({super.key});
@@ -54,7 +54,7 @@ class _Pengajuan extends State<Pengajuan> {
                       keyboardType: TextInputType.number,
                       inputFormatters: [FilteringTextInputFormatter.digitsOnly],
                     ),
-                    PickFile()
+                    Attachment()
                   ],
                 ))
               ],

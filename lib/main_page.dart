@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:plosokerep_apk/beranda.dart';
 import 'package:plosokerep_apk/layanan.dart';
+import 'package:plosokerep_apk/profile.dart';
 import 'package:plosokerep_apk/profile_desa.dart';
 import 'package:plosokerep_apk/resources/br/btmnvbr.dart';
 
@@ -15,9 +16,9 @@ class _HomePage extends State<HomePage> {
   int _currentIndex = 0;
   final List<Widget> _pages = [
     const Beranda(),
-    const ProfileDesa(),
+    ProfileDesa(),
     const Layanan(),
-    const Center(child: Text('profile')),
+    const Profile(),
   ];
   @override
   Widget build(BuildContext context) {

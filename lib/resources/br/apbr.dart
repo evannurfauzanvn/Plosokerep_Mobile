@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plosokerep_apk/resources/clr.dart';
 
 class Appbar extends StatelessWidget implements PreferredSizeWidget {
   const Appbar({super.key});
@@ -20,7 +21,7 @@ class Appbar extends StatelessWidget implements PreferredSizeWidget {
               "image/LOGO1.png",
               fit: BoxFit.contain,
             )),
-        backgroundColor: Colors.lightBlue,
+        backgroundColor: primer,
       ),
     );
   }

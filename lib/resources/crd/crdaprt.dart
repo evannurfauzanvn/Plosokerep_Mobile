@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plosokerep_apk/resources/clr.dart';
+import 'package:plosokerep_apk/resources/cntr/cntrimgpfl.dart';
 
 class CardAparatur extends StatelessWidget {
   final String? profile;
@@ -15,18 +16,12 @@ class CardAparatur extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: const EdgeInsets.only(left: 16,right: 16,top: 10),
-      color: cardAparatur,
+      margin: const EdgeInsets.only(left: 16, right: 16, top: 10),
+      color: primer,
       child: Row(
         children: [
-          Container(
-            margin: const EdgeInsets.only(left: 10,top: 10,bottom: 10),
-            width: 100,
-            height: 100,
-            clipBehavior: Clip.hardEdge,
-            decoration:
-                const BoxDecoration(color: Colors.grey, shape: BoxShape.circle),
-            child: image,
+          ImageProfile(
+            image: image,
           ),
           Expanded(
             child: Column(

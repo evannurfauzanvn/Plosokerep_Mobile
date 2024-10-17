@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plosokerep_apk/resources/br/appbrtx.dart';
+import 'package:plosokerep_apk/resources/clr.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 class VisiMisiDesa extends StatelessWidget {
@@ -10,7 +11,7 @@ class VisiMisiDesa extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: background,
       appBar: const AppBarText(
         judul: "Visi dan Misi Desa Tahun 2015-2021",
       ),
