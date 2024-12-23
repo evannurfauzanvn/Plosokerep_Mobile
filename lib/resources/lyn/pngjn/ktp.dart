@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:plosokerep_apk/resources/br/appbrtx.dart';
+import 'package:plosokerep_apk/resources/br/btmnvbrbtn.dart';
 import 'package:plosokerep_apk/resources/clr.dart';
 import 'package:plosokerep_apk/resources/cntr/brdcntr.dart';
 import 'package:plosokerep_apk/resources/frmfld/brdfrmfld.dart';
@@ -61,6 +62,9 @@ class _KTP extends State<KTP> {
             ),
           ),
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBarButton(
+        text: "Kirim",
       ),
     );
   }

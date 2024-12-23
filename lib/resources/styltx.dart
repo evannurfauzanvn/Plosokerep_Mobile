@@ -29,3 +29,5 @@ TextStyle styleJudul = const TextStyle(fontSize: 18,fontWeight: FontWeight.bold,
 TextStyle styleTanggal = const TextStyle(fontSize: 14,fontWeight: FontWeight.bold,color: Colors.black);
 
 TextStyle styleUmkm = TextStyle(fontSize: 30,fontWeight: FontWeight.bold,color: Colors.lightBlue);
+
+TextStyle stylebtmbrbtn = TextStyle(fontSize: 24,fontWeight: FontWeight.bold,color: Colors.white);

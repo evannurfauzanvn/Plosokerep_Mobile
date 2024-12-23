@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plosokerep_apk/kebijakan.dart';
 import 'package:plosokerep_apk/login.dart';
 import 'package:plosokerep_apk/resources/cntr/cntrmn.dart';
 
@@ -19,7 +20,9 @@ class MenuProfile extends StatelessWidget {
                 Navigator.pushReplacement(
                     context, MaterialPageRoute(builder: (context) => Login()));
               }),
-          ContainerMenu(menu: "Kebijakan Privasi", onPressed: () {})
+          ContainerMenu(menu: "Kebijakan Privasi", onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Kebijakan()));
+          })
         ],
       ),
     );

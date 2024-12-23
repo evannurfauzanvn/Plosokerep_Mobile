@@ -47,10 +47,10 @@ class Bottomnavigationbar extends StatelessWidget {
             icon: Icon(Icons.folder_shared_outlined),
             label: "Layanan",
           ),
-          // BottomNavigationBarItem(
-          //   icon: Icon(Icons.person),
-          //   label: "Profile",
-          // ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: "Profile",
+          ),
         ],
       ),
     );

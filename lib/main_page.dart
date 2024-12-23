@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:plosokerep_apk/beranda.dart';
 import 'package:plosokerep_apk/layanan.dart';
+import 'package:plosokerep_apk/profile.dart';
 // import 'package:plosokerep_apk/profile.dart';
 import 'package:plosokerep_apk/profile_desa.dart';
 import 'package:plosokerep_apk/resources/br/btmnvbr.dart';
@@ -20,7 +21,7 @@ class _HomePage extends State<HomePage> {
     ProfileDesa(),
     const UMKM(),
     const Layanan(),
-    // const Profile(),
+    const Profile(),
   ];
   @override
   Widget build(BuildContext context) {

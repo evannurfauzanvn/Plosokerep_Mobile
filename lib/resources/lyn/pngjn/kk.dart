@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:plosokerep_apk/resources/br/appbrtx.dart';
+import 'package:plosokerep_apk/resources/br/btmnvbrbtn.dart';
 import 'package:plosokerep_apk/resources/clr.dart';
 import 'package:plosokerep_apk/resources/cntr/brdcntr.dart';
 import 'package:plosokerep_apk/resources/frmfld/brdfrmfld.dart';
@@ -38,9 +39,10 @@ class _KK extends State<KK> {
                     child: Column(
                   children: [
                     BorderFormField(
-                        label: "Nama Lengkap",
-                        padding: _paddingB,
-                        controller: namalengkap,),
+                      label: "Nama Lengkap",
+                      padding: _paddingB,
+                      controller: namalengkap,
+                    ),
                     BorderFormField(
                       label: "NIK",
                       padding: _paddingB,
@@ -61,6 +63,9 @@ class _KK extends State<KK> {
             ),
           ),
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBarButton(
+        text: "Kirim",
       ),
     );
   }
