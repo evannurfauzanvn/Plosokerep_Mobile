@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:plosokerep_apk/resources/clr.dart';
+import 'package:plosokerep_apk/resources/styltx.dart';
 
 class ButtonIconNamed extends StatelessWidget {
   final VoidCallback onpressed;
   final Widget image;
   final String name;
   final double? wh;
-  final TextStyle textStyle = const TextStyle(
-      fontWeight: FontWeight.bold, fontSize: 18, color: Colors.black);
   const ButtonIconNamed({
     super.key,
     required this.onpressed,
@@ -38,7 +37,7 @@ class ButtonIconNamed extends StatelessWidget {
           height: 30,
           child: Text(
             name,
-            style: textStyle,
+            style: styleButtonNamed,
             textAlign: TextAlign.center,
           ),
         )

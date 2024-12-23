@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plosokerep_apk/resources/clr.dart';
+import 'package:plosokerep_apk/resources/styltx.dart';
 
 class AppBarText extends StatelessWidget implements PreferredSizeWidget {
   final String? judul;
@@ -20,7 +21,7 @@ class AppBarText extends StatelessWidget implements PreferredSizeWidget {
         backgroundColor: background,
         title: Text(
           judul ?? "Judul",
-          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          style: styleBarJudul,
         ),
       ),
     );

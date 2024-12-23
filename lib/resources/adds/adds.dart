@@ -2,14 +2,14 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:plosokerep_apk/resources/adds/adds_dumy.dart';
 
-class Iklan extends StatefulWidget {
-  const Iklan({super.key});
+class Adds extends StatefulWidget {
+  const Adds({super.key});
 
   @override
-  State<StatefulWidget> createState() => _Iklan();
+  State<StatefulWidget> createState() => _Adds();
 }
 
-class _Iklan extends State<Iklan> {
+class _Adds extends State<Adds> {
   late PageController _pageController;
   late Timer _timer;
   int _currentPage = 0;

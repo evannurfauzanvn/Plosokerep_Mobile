@@ -40,13 +40,17 @@ class Bottomnavigationbar extends StatelessWidget {
             label: "Profile Desa",
           ),
           BottomNavigationBarItem(
+            icon: Icon(Icons.shopping_cart),
+            label: "UMKM",
+          ),
+          BottomNavigationBarItem(
             icon: Icon(Icons.folder_shared_outlined),
             label: "Layanan",
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: "Profile",
-          ),
+          // BottomNavigationBarItem(
+          //   icon: Icon(Icons.person),
+          //   label: "Profile",
+          // ),
         ],
       ),
     );

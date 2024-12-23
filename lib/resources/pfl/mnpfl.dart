@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plosokerep_apk/login.dart';
 import 'package:plosokerep_apk/resources/cntr/cntrmn.dart';
 
 class MenuProfile extends StatelessWidget {
@@ -11,8 +12,13 @@ class MenuProfile extends StatelessWidget {
       child: Column(
         children: [
           ContainerMenu(menu: "Akun", onPressed: () {}),
-          ContainerMenu(menu: "Privasi",onPressed: () {}),
-          ContainerMenu(menu: "Log Out", onPressed: () {}),
+          ContainerMenu(menu: "Privasi", onPressed: () {}),
+          ContainerMenu(
+              menu: "Log Out",
+              onPressed: () {
+                Navigator.pushReplacement(
+                    context, MaterialPageRoute(builder: (context) => Login()));
+              }),
           ContainerMenu(menu: "Kebijakan Privasi", onPressed: () {})
         ],
       ),

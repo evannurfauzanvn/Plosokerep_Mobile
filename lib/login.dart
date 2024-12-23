@@ -38,6 +38,7 @@ class _Login extends State<Login> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     BorderFormField(
+                      label: "E-mail / no.telp",
                       controller: _emailcontroller,
                       hintText: "E-mail atau nomor telpon",
                     ),
@@ -45,7 +46,9 @@ class _Login extends State<Login> {
                       height: 10,
                     ),
                     SecureFormField(
-                        controller: _passwordcontroller, hintText: "Password"),
+                        label: "Password",
+                        controller: _passwordcontroller,
+                        hintText: "Password"),
                     const SizedBox(
                       height: 10,
                     ),

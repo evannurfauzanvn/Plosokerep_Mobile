@@ -40,13 +40,13 @@ class _Register extends State<Register> {
                 ),
                 child: Column(
                   children: [
-                    BorderFormField(controller: _emailcontroller, hintText: "E-mail"),
+                    BorderFormField(label: "E-mail",controller: _emailcontroller, hintText: "E-mail"),
                     const SizedBox(height: 10,),
-                    BorderFormField(controller: _phonecontroller, hintText: "Nomor telpon"),
+                    BorderFormField(label: "Nomor telpon",controller: _phonecontroller, hintText: "Nomor telpon"),
                     const SizedBox(height: 10,),
-                    BorderFormField(controller: _frontnamecontroller, hintText: "Nama depan"),
+                    BorderFormField(label: "Nama depan",controller: _frontnamecontroller, hintText: "Nama depan"),
                     const SizedBox(height: 10,),
-                    BorderFormField(controller: _lastnamecontroller, hintText: "Nama belakang (opsional)"),
+                    BorderFormField(label: "Nama belakang (opsional)",controller: _lastnamecontroller, hintText: "Nama belakang (opsional)"),
                     const SizedBox(height: 10,),
                     SecureFormField(controller: _passwordcontroller, hintText: "Password"),
                     const SizedBox(height: 10,),

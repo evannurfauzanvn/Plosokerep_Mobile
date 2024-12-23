@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plosokerep_apk/resources/btn/btnicnbrnd.dart';
+import 'package:plosokerep_apk/resources/pflds/aprtds.dart';
 
 class ViewIconBeranda extends StatelessWidget {
   const ViewIconBeranda({super.key});
@@ -24,7 +25,11 @@ class ViewIconBeranda extends StatelessWidget {
           IconBeranda(
               iconData: Image.asset("image/aparatur.png"),
               iconName: "Aparatur",
-              onPressed: () {}),
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return AparaturDesa();
+                }));
+              }),
           IconBeranda(
               iconData: Image.asset("image/info desa.png"),
               iconName: "Info Desa",

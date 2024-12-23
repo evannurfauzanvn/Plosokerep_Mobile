@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plosokerep_apk/resources/cntr/sdwcntr.dart';
+import 'package:plosokerep_apk/resources/styltx.dart';
 
 class IconBeranda extends StatelessWidget {
   final Widget? iconData;
@@ -9,13 +10,6 @@ class IconBeranda extends StatelessWidget {
   final double H = 60;
   final double hP = 5;
   final double S = 45;
-  final TextStyle textStyle = const TextStyle(
-      fontSize: 12,
-      fontWeight: FontWeight.w900,
-      color: Colors.black,
-      shadows: [
-        Shadow(color: Colors.grey, blurRadius: 2, offset: Offset(-3, 3))
-      ]);
   const IconBeranda(
       {super.key, this.iconData, this.iconName, required this.onPressed});
 
@@ -26,6 +20,7 @@ class IconBeranda extends StatelessWidget {
         ShadowContainer(
           w: W,
           h: H,
+          borderRadius: BorderRadius.circular(10),
           child: IconButton(
             onPressed: onPressed,
             icon: iconData ?? Icon(Icons.error_outline),
@@ -37,7 +32,7 @@ class IconBeranda extends StatelessWidget {
         ),
         Text(
           iconName ?? "Icon Name",
-          style: textStyle,
+          style: styleButtonBeranda,
         )
       ],
     );

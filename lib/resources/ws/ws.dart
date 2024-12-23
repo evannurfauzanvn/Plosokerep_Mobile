@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:plosokerep_apk/resources/clr.dart';
+import 'package:plosokerep_apk/resources/msg/errmsgnet.dart';
+import 'package:plosokerep_apk/resources/styltx.dart';
 import 'package:plosokerep_apk/resources/ws/bxws.dart';
 import 'package:plosokerep_apk/resources/ws/getws.dart';
 import 'package:plosokerep_apk/resources/ws/lslks.dart';
@@ -30,9 +32,11 @@ class _Waktusholat extends State<Waktusholat> {
         future: prayerTime,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(child: CircularProgressIndicator());
+            return const Center(
+                child: CircularProgressIndicator(color: Colors.white));
           } else if (snapshot.hasError) {
-            return Text('Error: ${snapshot.error}');
+            return Center(
+                child: ErrorMessageInternet());
           } else if (snapshot.hasData) {
             return Container(
               padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -48,18 +52,9 @@ class _Waktusholat extends State<Waktusholat> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const Text(
-                          "Wilayah ",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18,
-                              color: Colors.white),
-                        ),
+                        Text("Wilayah ", style: subStyleSholat),
                         DropdownButton<String>(
-                          style: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18),
+                          style: subStyleSholat,
                           alignment: AlignmentDirectional.center,
                           value: selectedLocation,
                           dropdownColor: primer,

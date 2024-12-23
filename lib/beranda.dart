@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:plosokerep_apk/resources/br/apbr.dart';
 import 'package:plosokerep_apk/resources/clr.dart';
 import 'package:plosokerep_apk/resources/cntr/sdwcntr.dart';
+import 'package:plosokerep_apk/resources/vw/vwbrtbrnd.dart';
 import 'package:plosokerep_apk/resources/vw/vwicnbrnd.dart';
 import 'package:plosokerep_apk/resources/adds/adds.dart';
 import 'package:plosokerep_apk/resources/ws/ws.dart';
@@ -66,18 +67,10 @@ class _Beranda extends State<Beranda> {
               child: ShadowContainer(
                 h: 130,
                 w: MediaQuery.of(context).size.width,
-                child: const Iklan(),
+                child: const Adds(),
               ),
             ),
-            Container(
-              padding: const EdgeInsets.all(16),
-              color: Colors.amber,
-              child: Container(
-                height: 1000,
-                width: MediaQuery.of(context).size.width,
-                color: Colors.black,
-              ),
-            ),
+            ViewRekBerita()
           ],
         ),
       ),

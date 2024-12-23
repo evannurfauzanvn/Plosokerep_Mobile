@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:plosokerep_apk/resources/clr.dart';
 import 'package:plosokerep_apk/resources/cntr/cntrimgpfl.dart';
+import 'package:plosokerep_apk/resources/styltx.dart';
 
 class CardAparatur extends StatelessWidget {
   final String? profile;
   final Widget image;
   final String? name;
   final String? jabatan;
-  final TextStyle namestyle =
-      const TextStyle(fontWeight: FontWeight.bold, fontSize: 24);
-  final TextStyle jabatanstyle = const TextStyle(fontSize: 20);
   CardAparatur({super.key, this.profile, this.name, this.jabatan})
       : image = Image.asset(profile ?? "image/aparatur.png", fit: BoxFit.cover);
 
@@ -28,11 +26,11 @@ class CardAparatur extends StatelessWidget {
               children: [
                 Text(
                   name ?? "Nama Anggota",
-                  style: namestyle,
+                  style: nameStyleCard,
                 ),
                 Text(
                   jabatan ?? "Jabatan",
-                  style: jabatanstyle,
+                  style: jabatanStyleCard,
                 ),
               ],
             ),
